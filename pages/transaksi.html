@@ -324,8 +324,7 @@
             const nomorAdminWhatsApp = "6287843893138"; 
 
             // Buka WhatsApp (menggunakan window.location.href agar langsung mengarahkan halaman tanpa terblokir popup blocker)
-            window.location.href = `https://wa.me/${nomorAdminWhatsApp}?text=${encodedMessage}`;
-        }
+            window.top.location.href = `https://wa.me/${nomorAdminWhatsApp}?text=${encodedMessage}`;        }
 
         window.onload = function() {
             const today = new Date().toISOString().split('T')[0];
